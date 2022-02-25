@@ -30,7 +30,7 @@ test('map/2', () => {
 
 test('filter/2', () => {
   let filter
-  expect(filter([1, 2, 3], a => a < 2)).toBe([1, 2])
+  expect(filter([1, 2, 3], a => a <= 2)).toBe([1, 2])
   expect(filter([1, 2, 3], a => a % 2 === 0)).toBe([2])
   expect(filter([1, 2, 3], a => a >= 2)).toBe([2, 3])
 })
