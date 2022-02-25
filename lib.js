@@ -26,7 +26,7 @@ global.test = (testName, cb) => {
       console.error(error.stack.split('\n')[2])
       process.exit(1)
     }
-    console.error('UNKNOWN ERROR')
+    console.error(`${testName}: Unknown Error occurred`)
     console.error(error)
     process.exit(1)
   }
