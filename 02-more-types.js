@@ -20,12 +20,24 @@ test('string', () => {
   expect(typeChecker('yo')).toBe('string')
 })
 
+test('string', () => {
+  expect(typeChecker(new String('hey'))).toBe('string')
+})
+
 test('number', () => {
   expect(typeChecker(7)).toBe('number')
 })
 
+test('number', () => {
+  expect(typeChecker(new Number(1))).toBe('number')
+})
+
 test('boolean', () => {
   expect(typeChecker(true)).toBe('boolean')
+})
+
+test('boolean', () => {
+  expect(typeChecker(new Boolean(false))).toBe('boolean')
 })
 
 test('object', () => {
